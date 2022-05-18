@@ -15,8 +15,7 @@ class HomeController extends Controller
 
     public function store()
     {
-        $products = Product::all();
-        dd($products);
+        $products = Product::with('category')->paginate(12);
         return view('home.store-page', compact('products'));
     }
 }

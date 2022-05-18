@@ -1,144 +1,146 @@
 :root {
-  --white-color: white;
-  --red-color: #ff0000;
-  --black-color: black;
-  --gray-color: #696969;
-  --dark-gray-color: #222222;
-  --light-gray-color: #ececec;
+    --white-color: white;
+    --red-color: #ff0000;
+    --black-color: black;
+    --gray-color: #696969;
+    --dark-gray-color: #222222;
+    --light-gray-color: #ececec;
 }
 
 * {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .side-bar {
-  height: 35px;
-  background-color: var(--black-color);
+    height: 35px;
+    background-color: var(--black-color);
 
-  ul {
-    color: var(--white-color);
+    ul {
+        color: var(--white-color);
 
-    li {
-      &::before {
-        content: "";
-        width: 0;
-        height: 10px;
-        border: 1px solid var(--white-color);
-        top: 0;
-        left: 100px;
-        margin-right: 12px;
-      }
+        li {
+            &::before {
+                content: "";
+                width: 0;
+                height: 10px;
+                border: 1px solid var(--white-color);
+                top: 0;
+                left: 100px;
+                margin-right: 12px;
+            }
 
-      font-size: 12px;
-      font-weight: bold;
+            font-size: 12px;
+            font-weight: bold;
+        }
     }
-  }
 
-  .cart {
-    padding-right: 8%;
+    .cart {
+        padding-right: 8%;
 
-    a {
-      box-shadow: none;
-      color: var(--white-color);
+        a {
+            box-shadow: none;
+            color: var(--white-color);
+        }
     }
-  }
 }
 
 .explorer-product {
-  h5 {
-    text-align-last: center;
-  }
-
-  .product-text {
-    color: var(--gray-color);
-  }
-
-  .exp-product-item {
-    .exp-product-img {
-      width: 50%;
+    h5 {
+        text-align-last: center;
     }
 
-    .exp-product-text {
-      font-weight: bold;
+    .product-text {
+        color: var(--gray-color);
     }
-  }
+
+    .exp-product-item {
+        .exp-product-img {
+            width: 50%;
+        }
+
+        .exp-product-text {
+            font-weight: bold;
+        }
+    }
 }
 
 .swiper-wrapper {
-  img {
-    width: 100%;
-  }
+    img {
+        width: 100%;
+    }
 }
 
 .product-list {
-  .product-thumb {
-    font-family: 'DIN-Pro';
-    .image {
-      text-align-last: center;
-      border-bottom: 1px solid #ccc;
+    .product-thumb {
+        font-family: 'DIN-Pro', sans-serif;
+
+        .image {
+            text-align-last: center;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .title {
+            font-weight: bold;
+
+            a {
+                color: var(--black-color);
+            }
+
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .description {
+            border-bottom: 1px solid #ccc;
+
+            ul {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+
+        .price {
+            text-align: right;
+
+            .price-new {
+                color: var(--red-color);
+                font-weight: bold;
+                font-size: 24px;
+            }
+
+            .price-old {
+                text-decoration: line-through;
+                color: rgb(41, 41, 41);
+                font-size: 11px;
+            }
+
+            border-bottom: 1px solid #ccc;
+        }
+
+        .button {
+            .btn {
+                font-size: 10px;
+                border-radius: 20px;
+            }
+
+            text-align: right;
+        }
     }
-
-    .title {
-      font-weight: bold;
-
-      a {
-        color: var(--black-color);
-      }
-
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      border-bottom: 1px solid #ccc;
-    }
-
-    .description {
-      border-bottom: 1px solid #ccc;
-      li {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-    }
-
-    .price {
-      text-align: right;
-
-      .price-new {
-        color: var(--red-color);
-        font-weight: bold;
-        font-size: 24px;
-      }
-
-      .price-old {
-        text-decoration: line-through;
-        color: rgb(41, 41, 41);
-        font-size: 11px;
-      }
-
-      border-bottom: 1px solid #ccc;
-    }
-
-    .button {
-      .btn {
-        font-size: 10px;
-        border-radius: 20px;
-      }
-
-      text-align: right;
-    }
-  }
 }
 
 .pagination {
-  place-content: center;
+    place-content: center;
 
-  a {
-    color: var(--black-color);
+    a {
+        color: var(--black-color);
 
-    &:hover {
-      color: var(--red-color);
-      text-decoration: none;
+        &:hover {
+            color: var(--red-color);
+            text-decoration: none;
+        }
     }
-  }
 }

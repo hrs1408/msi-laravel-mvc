@@ -71,30 +71,24 @@
             <div class="row">
                 @forelse($products as $product)
                     <x-product-item
-                        name="{{$product->name}}}}"
-                        body="{{$product->body}}"
+                        name="{{$product->name}}"
+                        short_desc="{{$product->short_desc}}"
                         oldPrice=""
                         price="{{$product->price}}"
-                        image="https://us-store.msi.com/image/cache/catalog/Pd_page/Desktops/AegisTi5/AEGISTI5-1-160x160.png"
+                        image="{{isset($product->images[0]) ? '/'.$product->images[0]->url : ''}}"
                     >
                     </x-product-item>
                 @empty
-                    <div class="col-md-12">
-                        <p>No products</p>
+                    <div class="col-md-12 text-center mt-5">
+                        <div class="spinner-border text-danger" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
                     </div>
                 @endforelse
             </div>
-            <nav aria-label="Page navigation example">
-                <ul class="pagination mt-xl-3">
-                    <li class="page-item">
-                        <a class="page-link" href="#">Previous</a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                </ul>
-            </nav>
+            <div class="pagination mt-5">
+                {{ $products->render('pagination::home-pagination') }}
+            </div>
         </div>
     </div>
     <div class="swiper-wrapper">

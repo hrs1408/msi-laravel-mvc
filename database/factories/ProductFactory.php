@@ -19,11 +19,12 @@ class ProductFactory extends Factory
         return [
             'name' => $this->faker->name,
             'body' => $this->faker->text,
+            'short_desc' => $this->faker->text,
             'slug' => $this->faker->slug,
-            'price' => $this->faker->randomFloat(2, 0, 100),
+            'price' => $this->faker->randomFloat(2, 100, 9000),
             'quantity' => $this->faker->numberBetween(0, 100),
             'status' => $this->faker->boolean,
-            'category_id' => $this->faker->numberBetween(1, 10),
+            'category_id' => $this->faker->numberBetween(1, 20),
             'created_at' => $this->faker->dateTimeBetween('-1 year', 'now'),
             'updated_at' => $this->faker->dateTimeBetween('-1 year', 'now'),
         ];

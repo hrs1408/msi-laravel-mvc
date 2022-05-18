@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class OrderDetailController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the resources.
      *
      * @return \Illuminate\Http\Response
      */
@@ -17,7 +17,7 @@ class OrderDetailController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new resources.
      *
      * @return \Illuminate\Http\Response
      */
@@ -27,7 +27,7 @@ class OrderDetailController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created resources in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -38,7 +38,7 @@ class OrderDetailController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display the specified resources.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -49,7 +49,7 @@ class OrderDetailController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Show the form for editing the specified resources.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -60,7 +60,7 @@ class OrderDetailController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified resources in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
@@ -72,7 +72,7 @@ class OrderDetailController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified resources from storage.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response

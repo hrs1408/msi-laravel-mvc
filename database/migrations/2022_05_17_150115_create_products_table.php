@@ -17,10 +17,11 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->longText('body');
-            $table->string('slug');
+            $table->longText('short_desc');
+            $table->string('slug')->nullable(true);
             $table->float('price');
-            $table->integer('quantity');
-            $table->boolean('status');
+            $table->integer('quantity')->default(0);
+            $table->boolean('status')->default(true);
             $table->foreignIdFor(\App\Models\Category::class)->constrained()->cascadeOnDelete();
             $table->timestamps();
         });

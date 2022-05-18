@@ -17,7 +17,12 @@ class ImageFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->name,
+            'url' => 'https://picsum.photos/1200/800',
+            'imageable_id' => $this->faker->numberBetween(1, 1000),
+            'imageable_type' => $this->faker->randomElement(['App\Models\Product']),
+            'created_at' => $this->faker->dateTimeBetween('-1 year', 'now'),
+            'updated_at' => $this->faker->dateTimeBetween('-1 year', 'now'),
         ];
     }
 }
