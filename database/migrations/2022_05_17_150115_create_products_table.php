@@ -21,7 +21,7 @@ return new class extends Migration
             $table->float('price');
             $table->integer('quantity');
             $table->boolean('status');
-            $table->foreignId('category_id')->constrained()->cascadeOnDelete();
+            $table->foreignIdFor(\App\Models\Category::class)->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
     }

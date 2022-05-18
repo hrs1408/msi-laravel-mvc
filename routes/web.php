@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,13 +12,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::group([], static function () {
+    Route::group(['as' => 'home.'], static function () {
+        Route::get('/', [HomeController::class, 'index'])->name('index');
+        Route::get('/store', [HomeController::class, 'store'])->name('store');
+    });
+    Route::group(['prefix' => 'admin', 'as' => 'admin.'], static function () {
 
-Route::get('/', function () {
-    return view('welcome');
+    }
+    );
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
-
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

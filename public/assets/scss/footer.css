@@ -1,0 +1,63 @@
+footer footer-head {
+  border-top: var(--light-gray-color) solid 1px;
+}
+
+footer ul {
+  color: var(--gray-color);
+  list-style: none;
+}
+
+footer ul li {
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+footer ul li:hover {
+  text-decoration: underline;
+}
+
+footer ul .heading {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+footer .footer-item .copyright {
+  font-size: 13px;
+}
+
+footer .footer-item .copyright img {
+  width: 50px;
+  height: 15px;
+}
+
+footer .footer-item .contact ul {
+  margin-left: auto;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+footer .footer-item .contact ul li {
+  font-size: 13px;
+}
+
+.footer-repository .accordion-item {
+  border: none;
+}
+
+.footer-repository .accordion-item .accordion-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.footer-repository .accordion-item .accordion-button:not(.collapsed) {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+.footer-repository .accordion-item .accordion-button:not(.collapsed)::after {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+/*# sourceMappingURL=footer.css.map */
