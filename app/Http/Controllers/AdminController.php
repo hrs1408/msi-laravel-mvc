@@ -8,6 +8,7 @@ class AdminController extends Controller
 {
     public function index()
     {
-        return view('admin.dashboard-page');
+        $user = auth()->user();
+        return view('admin.dashboard-page', compact('user'));
     }
 }

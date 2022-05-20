@@ -218,8 +218,8 @@
                                  src="{{@asset('/assets/admin/images/users/4.jpg')}}"
                                  alt="">
                             <div class="user-name-hide media-body">
-                                <span>Emay Walter</span>
-                                <p class="mb-0 font-roboto">Admin<i class="middle fa fa-angle-down"></i></p>
+                                <span>{{  Auth::user()->name }}</span>
+                                <p class="mb-0 font-roboto">{{Auth::user()->role}}<i class="middle fa fa-angle-down"></i></p>
                             </div>
                         </div>
                         <ul class="profile-dropdown onhover-show-div">
@@ -496,7 +496,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="button-box">
                         <button type="button" class="btn btn--no " data-bs-dismiss="modal">No</button>
-                        <button type="submit" class="btn btn--yes btn-primary">Yes</button>
+                        <a href="{{route('logout')}}" type="submit" class="btn btn--yes btn-primary">Yes</a>
                     </div>
                 </form>
             </div>
