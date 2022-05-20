@@ -21,7 +21,7 @@ Route::group([], static function () {
         Route::get('/', [HomeController::class, 'index'])->name('index');
         Route::get('/store', [HomeController::class, 'store'])->name('store');
     });
-    Route::group(['prefix' => 'admin', 'as' => 'admin.'], static function () {
+    Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'admin.only'], static function () {
         Route::get('/', [AdminController::class, 'index'])->name('index');
         Route::resource('/categories', AdminCategoryController::class)->names([
             'index' => 'categories.index',
