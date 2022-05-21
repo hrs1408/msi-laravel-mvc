@@ -1,0 +1,14 @@
+:root {
+  --white-color: white;
+  --red-color: #ff0000;
+  --black-color: black;
+  --gray-color: #696969;
+  --dark-gray-color: #222222;
+  --light-gray-color: #ececec;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+/*# sourceMappingURL=product-detail.css.map */

@@ -46,7 +46,7 @@
             <div class="row h-100 w-100 justify-content-between ps-5">
                 <div class="col-8 menuAction d-flex">
                     <div class="logo">
-                        <a href="index.html">
+                        <a href="{{route('home.index')}}">
                             <img
                                 src="https://storage-asset.msi.com/frontend/imgs/logo.png"
                                 alt="logo"
