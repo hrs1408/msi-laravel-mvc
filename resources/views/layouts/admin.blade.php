@@ -219,7 +219,8 @@
                                  alt="">
                             <div class="user-name-hide media-body">
                                 <span>{{  Auth::user()->name }}</span>
-                                <p class="mb-0 font-roboto">{{Auth::user()->role}}<i class="middle fa fa-angle-down"></i></p>
+                                <p class="mb-0 font-roboto">{{Auth::user()->role}}<i
+                                        class="middle fa fa-angle-down"></i></p>
                             </div>
                         </div>
                         <ul class="profile-dropdown onhover-show-div">
@@ -270,7 +271,7 @@
                 <div class="logo-wrapper logo-wrapper-center">
                     <a href="index.html" data-bs-original-title="" title="">
                         <img class="img-fluid for-dark"
-                             src="{{@asset('/assets/admin/images/logo/logo-white.png')}}" alt="">
+                             src="https://storage-asset.msi.com/frontend/imgs/logo.png" alt="">
                     </a>
                     <div class="back-btn">
                         <i class="fa fa-angle-left"></i>
@@ -496,7 +497,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="button-box">
                         <button type="button" class="btn btn--no " data-bs-dismiss="modal">No</button>
-                        <a href="{{route('logout')}}" type="submit" class="btn btn--yes btn-primary">Yes</a>
+                        <button type="submit" class="btn btn--yes btn-primary">Yes</button>
                     </div>
                 </form>
             </div>
