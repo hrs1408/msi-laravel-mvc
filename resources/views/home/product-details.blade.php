@@ -31,7 +31,7 @@
             <div class="col-xl-6">
                 <div class="container-fluid break-line"></div>
                 <h3>{{$product->name}}</h3>
-                <p style="font-size: 15px; height: 150px">
+                <p style="font-size: 15px; ">
                     {{$product->short_desc}}
                 </p>
                 <div class="container-fluid break-line"></div>

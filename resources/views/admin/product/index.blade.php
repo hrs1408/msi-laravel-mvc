@@ -74,7 +74,7 @@
                                                     </li>
 
                                                     <li>
-                                                        <a data-bs-toggle="modal" class="btn"
+                                                        <a data-bs-toggle="modal" class="btn p-0"
                                                            data-bs-target="#deleteModal"
                                                            data-action="{{ route('admin.products.destroy', $product) }}"><span
                                                                 class="lnr lnr-trash"></span></a>
