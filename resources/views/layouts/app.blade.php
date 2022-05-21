@@ -54,7 +54,9 @@
                         </a>
                     </div>
                     <div class="menuAction-item">
-                        <button class="btn">SẢN PHẨM</button>
+                        <a href="{{route('home.store')}}">
+                            <button class="btn ">SẢN PHẨM</button>
+                        </a>
                     </div>
                     <div class="menuAction-item">
                         <button class="btn">GIẢI PHÁP ODM</button>
@@ -69,7 +71,7 @@
                 <div class="col-2">
                     <div class="menuFunction h-100 d-flex">
                         <div class="menuFunction-item">
-                            <a href="">
+                            <a href="{{route('login')}}">
                                 <i class="fa-solid fa-user"></i>
                             </a>
                         </div>
