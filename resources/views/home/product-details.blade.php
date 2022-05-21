@@ -30,18 +30,9 @@
             </div>
             <div class="col-xl-6">
                 <div class="container-fluid break-line"></div>
-                <h3>MEG Aegis Ti5 12VTE-028US Gaming Desktop</h3>
-                <p style="font-size: 15px">
-                    MSI gaming desktops are equipped with the latest 12th Gen Intel Core
-                    i9 overclockable processors with a hybrid architecture. In addition
-                    to having 8+8 cores and 24 threads, the hybrid architecture allows
-                    the big cores to focus on performance-demanding tasks and the small
-                    cores to focus on other less demanding tasks. This operation setup
-                    allows you to enjoy the ultimate gaming experience. MEG Aegis Ti5 is
-                    equipped with a 2.5G network, providing players with smooth network
-                    experience. With the dual network port design of the 1G network,
-                    players can ensure that game data is always maintained at the
-                    highest priority and enjoy an excellent network experience.
+                <h3>{{$product->name}}</h3>
+                <p style="font-size: 15px; height: 150px">
+                    {{$product->short_desc}}
                 </p>
                 <div class="container-fluid break-line"></div>
                 <ul class="short-detail mt-3">
@@ -103,8 +94,8 @@
               </span>
                     </div>
                 </div>
-                <div class="button-function mt-4 mb-3 d-flex gap-5">
-                    <div class="price">$5990</div>
+                <div class="button-function mt-4 mb-3 d-flex justify-content-around">
+                    <div class="price">${{$product->price}}</div>
                     <div class="button d-flex gap-4">
                         <button class="btn btn-light border">COMPARE</button>
                         <button class="btn btn-danger">ADD TO CART</button>
