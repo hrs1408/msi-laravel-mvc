@@ -71,11 +71,7 @@
             <div class="row">
                 @forelse($products as $product)
                     <x-product-item
-                        name="{{$product->name}}"
-                        short_desc="{{$product->short_desc}}"
-                        oldPrice=""
-                        price="{{$product->price}}"
-                        image="{{isset($product->images[0]) ? '/'.$product->images[0]->url : ''}}"
+                        :product="$product"
                     >
                     </x-product-item>
                 @empty

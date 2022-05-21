@@ -302,7 +302,7 @@
                             </li>
 
                             <li class="sidebar-list">
-                                <a class="sidebar-link sidebar-title link-nav" href="index.html">
+                                <a class="sidebar-link sidebar-title link-nav" href="{{route('admin.index')}}">
                                     <i data-feather="home"></i>
                                     <span>Dashboard</span>
                                 </a>

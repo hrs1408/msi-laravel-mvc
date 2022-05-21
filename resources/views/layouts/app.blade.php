@@ -31,6 +31,7 @@
     />
     <link rel="stylesheet" href="{{@asset('/assets/scss/style-index.css')}}"/>
     <link rel="stylesheet" href="{{@asset('/assets/scss/store.css')}}"/>
+    <link rel="stylesheet" href="{{@asset('/assets/scss/product-detail.css')}}">
 
     <link
         rel="shortcut icon"

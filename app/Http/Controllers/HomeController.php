@@ -17,5 +17,12 @@ class HomeController extends Controller
     {
         $products = Product::with('category')->paginate(12);
         return view('home.store-page', compact('products'));
+
+    }
+
+    public function show($slug)
+    {
+        $product = Product::where('slug', $slug)->first();
+        return view('home.product-details', compact('product'));
     }
 }

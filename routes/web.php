@@ -6,6 +6,8 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Admin\CategoryController as AdminCategoryController;
 use App\Http\Controllers\Admin\ProductController as AdminProductController;
 use App\Http\Controllers\Admin\UserController as AdminUserController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +22,7 @@ Route::group([], static function () {
     Route::group(['as' => 'home.'], static function () {
         Route::get('/', [HomeController::class, 'index'])->name('index');
         Route::get('/store', [HomeController::class, 'store'])->name('store');
+        Route::get('/product/{slug}', [HomeController::class, 'show'])->name('show');
     });
     Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'admin.only'], static function () {
         Route::get('/', [AdminController::class, 'index'])->name('index');
