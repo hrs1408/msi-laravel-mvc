@@ -25,4 +25,8 @@ class HomeController extends Controller
         $product = Product::where('slug', $slug)->first();
         return view('home.product-details', compact('product'));
     }
+
+    public function checkout(){
+        return view('home.checkout-page');
+    }
 }

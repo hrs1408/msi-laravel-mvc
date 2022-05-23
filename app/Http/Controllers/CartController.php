@@ -40,30 +40,31 @@ class CartController extends Controller
                 $cart->save();
                 $cartDetailCurrent->save();
             } else {
-                $cartDetail = new CartDetail();
-                $cartDetail->cart_id = $cart->id;
-                $cartDetail->product_id = $request->product_id;
-                $cartDetail->quantity = 1;
-                $cartDetail->into_money = $cartDetail->quantity * Product::find($request->product_id)->price;
-                $cart->total_money +=  $cartDetail->into_money;
+                $cartDetail = CartDetail::create([
+                    'cart_id' => $cart->id,
+                    'product_id' => $request->product_id,
+                    'quantity' => 1,
+                    'into_money' => 1 * Product::find($request->product_id)->price
+                ]);
+                $cart->total_money += $cartDetail->into_money;
                 $cart->quantity += 1;
                 $cart->save();
-                $cartDetail->save();
             }
         } else {
-            $cart = new Cart();
-            $cart->user_id = $user->id;
-            $cart->total_money = 0;
-            $cart->save();
-            $cartDetail = new CartDetail();
-            $cartDetail->cart_id = $cart->id;
-            $cartDetail->product_id = $request->product_id;
-            $cartDetail->quantity = 1;
-            $cartDetail->into_money = $cartDetail->quantity * Product::find($request->product_id)->price;
+            $cart = Cart::create([
+                'user_id' => $user->id,
+                'total_money' => 0,
+                'quantity' => 0
+            ]);
+            $cartDetail = CartDetail::create([
+                'cart_id' => $cart->id,
+                'product_id' => $request->product_id,
+                'quantity' => 1,
+                'into_money' => 1 * Product::find($request->product_id)->price
+            ]);
             $cart->total_money += $cartDetail->quantity * Product::find($request->product_id)->price;
             $cart->quantity += 1;
             $cart->save();
-            $cartDetail->save();
         }
         return redirect()->route('cart.index');
     }

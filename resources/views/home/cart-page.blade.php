@@ -1,6 +1,6 @@
 <x-app-layout>
     <div class="container-fluid break-line"></div>
-    <div class="container cart-content mt-4">
+    <div class="container cart-content mt-4 mb-4">
         <div class="row">
             <div class="col-xl-8">
                 <h3>YOUR CART</h2>
@@ -47,7 +47,7 @@
                                     </div>
                                 </div>
                                 <div class="qty w-25">
-                                    <input class="form-control" type="number" name="" id="" style="width: 70px;"
+                                    <input class="form-control" type="number" name="" min="1" id="" style="width: 70px;"
                                            value="{{$cartDetail->quantity}}">
                                 </div>
                                 <div class="total w-25 d-flex justify-content-end">
@@ -101,5 +101,4 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid break-line mt-4"></div>
 </x-app-layout>

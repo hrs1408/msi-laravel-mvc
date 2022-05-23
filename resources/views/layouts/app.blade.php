@@ -70,7 +70,7 @@
                         <button class="btn">HỖ TRỢ</button>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-4">
                     <div class="menuFunction h-100 d-flex me-3" style="float: right">
                         <div style="place-self: center">
                             <a href="#" class="text-black text-decoration-none">

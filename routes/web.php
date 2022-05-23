@@ -24,6 +24,7 @@ Route::group([], static function () {
         Route::get('/', [HomeController::class, 'index'])->name('index');
         Route::get('/store', [HomeController::class, 'store'])->name('store');
         Route::get('/product/{slug}', [HomeController::class, 'show'])->name('show');
+        Route::get('/checkout', [HomeController::class, 'checkout'])->name('checkout');
 
     });
     Route::group(['as' => 'cart.'], static function () {
