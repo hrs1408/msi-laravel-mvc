@@ -12,18 +12,21 @@
         <div class="title">
             {{isset($product->name) ? $product->name : ''}}
         </div>
-        <div class="description" style="height: 150px">
-            <ul>
-                {{isset($product->short_desc) ? $product->short_desc : ''}}
-            </ul>
+        <div class="description over-flow-hidden" style="height: 150px">
+            {{isset($product->short_desc) ? $product->short_desc : ''}}
         </div>
     </a>
     <div class="price">
         <span class="price-old"></span>
         <span class="price-new">${{isset($product->price) ? $product->price : ''}}</span>
     </div>
-    <div class="button pt-2">
+    <div class="button pt-2 d-flex gap-4 justify-content-end">
         <button class="btn btn-light border">COMPARE</button>
-        <button class="btn btn-danger">ADD TO CART</button>
+        <form action="{{route('cart.insert', $product->id)}}" method="POST">
+            @csrf
+            @method('POST')
+            <input type="hidden" name="product_id" value="{{$product->id}}">
+            <button type="submit" class="btn btn-danger text-white">ADD TO CART</button>
+        </form>
     </div>
 </div>

@@ -1,0 +1,35 @@
+.cart-content .product-name {
+  font-weight: bold;
+}
+
+.cart-content .button .btn {
+  font-size: 12px;
+}
+
+.cart-content p {
+  margin: 0;
+}
+
+.cart-content .btn {
+  padding: 0;
+}
+
+.cart-content .total, .cart-content .total-price {
+  font-weight: bold;
+}
+
+.cart-content .quantity input {
+  width: 70px;
+  text-align: center;
+}
+
+.cart-content .add {
+  border: 1px solid black;
+  padding: 6px 30px;
+}
+
+.cart-content .checkout {
+  padding: 15px 12px;
+  width: 100%;
+}
+/*# sourceMappingURL=style-cart.css.map */

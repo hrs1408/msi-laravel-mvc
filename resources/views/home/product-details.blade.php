@@ -23,7 +23,8 @@
         <div class="row">
             <div class="col-xl-6">
                 <img
-                    src="https://us-store.msi.com/image/cache/catalog/Pd_page/Desktops/AegisTi5/AEGISTI5-1-1024x1024.png"
+                    src="
+                    {{isset($product->images[0]) ? '/'.$product->images[0]->url : ''}}"
                     alt=""
                     class="img-fluid"
                 />
@@ -35,30 +36,6 @@
                     {{$product->short_desc}}
                 </p>
                 <div class="container-fluid break-line"></div>
-                <ul class="short-detail mt-3">
-                    <li>Windows 11 Home<br /></li>
-                    <li>Intel Core™&nbsp;i9-12900K 8P+8EC/24T 3.2-5.2 GHz</li>
-                    <li>NVIDIA® GeForce RTX™ 3070 Ti 8G GDDR6X</li>
-                    <li>32GB DDR5 (2 x 16GB) 4800 MHz</li>
-                    <li>2TB M.2 NVMe</li>
-                    <li>2TB (3.5" 7200 RPM)</li>
-                    <li>
-                        PCIe Gen 5 bandwidth support, improved workloads and render
-                        capabilities for enhanced gaming experience.
-                    </li>
-                    <li>
-                        Gaming Dial- Quickly and intuitively harness this gaming beast
-                    </li>
-                    <li>
-                        Silent Storm Cooling 4 - Excellent heat dissipation design to
-                        ensure smooth operation of the game visuals
-                    </li>
-                    <li>2.5G + 1G Dual LAN - None delaying gaming experience</li>
-                    <li>WiFi 6E Technology wireless gaming with wired quality</li>
-                    <li>MSI Mystic Light, customize your gaming color</li>
-                    <li>Ambient Link support, immersive gaming experience</li>
-                </ul>
-                <div class="container-fluid break-line"></div>
                 <div class="policy d-flex">
                     <div class="policy-item d-flex gap-3">
                         <img
@@ -67,7 +44,7 @@
                             class="img-fluid"
                         />
                         <span class="policy-title">
-                <span>Free Shipping</span><br />
+                <span>Free Shipping</span><br/>
                 <span class="title-sub">On order over $25</span>
               </span>
                     </div>
@@ -78,7 +55,7 @@
                             class="img-fluid"
                         />
                         <span class="policy-title">
-                <span>Return for Refund</span><br />
+                <span>Return for Refund</span><br/>
                 <span class="title-sub">Within 30 days</span>
               </span>
                     </div>
@@ -89,7 +66,7 @@
                             class="img-fluid"
                         />
                         <span class="policy-title">
-                <span>1-YEAR Limited Warranty</span><br />
+                <span>1-YEAR Limited Warranty</span><br/>
                 <span class="title-sub">Base-on purchase date</span>
               </span>
                     </div>
@@ -103,5 +80,9 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container-fluid break-line"></div>
+    <div class="container product-body">
+        {!! $product->body !!}
     </div>
 </x-app-layout>

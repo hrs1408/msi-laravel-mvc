@@ -1,4 +1,24 @@
 <x-app-layout>
+    <div class="side-bar d-flex justify-content-between">
+        <ul class="ms-5 pt-2 d-flex list-unstyled gap-3">
+            <li>LAPTOPS</li>
+            <li>DESKTOPS</li>
+            <li>MONITORS</li>
+            <li>GRAPHIC CARDS</li>
+            <li>MOTHERBOARDS</li>
+            <li>GAMING GEARS</li>
+            <li>PC COMPONENT</li>
+            <li>SALE</li>
+            <li>WINDOWS 11</li>
+        </ul>
+        <div class="cart">
+            <ul class="ms-5 pt-2 d-flex list-unstyled gap-3">
+                <li><i class="fas fa-user"></i></li>
+                <li><i class="fas fa-comment"></i></li>
+                <li><a href="{{route('cart.index')}}"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </div>
+    </div>
     <x-carousel
         image1="https://us-store.msi.com/image/cache/catalog/banner/Home%20Page%20Rotate/Z690-GODLIKE_3600x1260-1920x672.jpg"
         image2="https://us-store.msi.com/image/cache/catalog/promotion/2022MBMANIA/3600x1260-1920x672.jpg"

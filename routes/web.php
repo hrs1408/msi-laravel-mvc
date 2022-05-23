@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CartController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
@@ -23,6 +24,14 @@ Route::group([], static function () {
         Route::get('/', [HomeController::class, 'index'])->name('index');
         Route::get('/store', [HomeController::class, 'store'])->name('store');
         Route::get('/product/{slug}', [HomeController::class, 'show'])->name('show');
+
+    });
+    Route::group(['as' => 'cart.'], static function () {
+        Route::get('/cart', [CartController::class, 'index'])->name('index');
+        Route::post('/cart/add', [CartController::class, 'insert'])->name('insert');
+        Route::post('/cart/update', [CartController::class, 'update'])->name('update');
+        Route::delete('/cart/remove', [CartController::class, 'remove'])->name('remove');
+        Route::post('/cart/destroy', [CartController::class, 'destroy'])->name('destroy');
     });
     Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'admin.only'], static function () {
         Route::get('/', [AdminController::class, 'index'])->name('index');

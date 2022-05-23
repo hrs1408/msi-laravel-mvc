@@ -95,6 +95,8 @@
 
 .product-list .product-thumb .description {
   border-bottom: 1px solid #ccc;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .product-list .product-thumb .description li {

@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="{{@asset('/assets/scss/style-index.css')}}"/>
     <link rel="stylesheet" href="{{@asset('/assets/scss/store.css')}}"/>
     <link rel="stylesheet" href="{{@asset('/assets/scss/product-detail.css')}}">
+    <link rel="stylesheet" href="{{@asset('/assets/scss/style-cart.css')}}">
 
     <link
         rel="shortcut icon"
@@ -69,12 +70,26 @@
                         <button class="btn">HỖ TRỢ</button>
                     </div>
                 </div>
-                <div class="col-2">
-                    <div class="menuFunction h-100 d-flex">
-                        <div class="menuFunction-item">
-                            <a href="{{route('login')}}">
-                                <i class="fa-solid fa-user"></i>
+                <div class="col-3">
+                    <div class="menuFunction h-100 d-flex me-3" style="float: right">
+                        <div style="place-self: center">
+                            <a href="#" class="text-black text-decoration-none">
+                                {{isset(Auth::user()->name) ? Auth::user()->name : ''}}
                             </a>
+                        </div>
+                        <div class="menuFunction-item">
+                            @if(Auth::check())
+                                <form action="{{route('logout')}}" method="post">
+                                    @csrf
+                                    <button type="submit" class="btn m-0 p-0">
+                                        <i class="fas fa-sign-out"></i>
+                                    </button>
+                                </form>
+                            @else
+                                <a href="{{route('login')}}">
+                                    <i class="fa-solid fa-user"></i>
+                                </a>
+                            @endif
                         </div>
                         <div class="menuFunction-item">
                             <a href="">

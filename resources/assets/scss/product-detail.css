@@ -50,4 +50,18 @@
   font-size: 15px;
   border-radius: 20px;
 }
+
+.product-body p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.product-body strong {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.product-body li {
+  list-style: none;
+}
 /*# sourceMappingURL=product-detail.css.map */

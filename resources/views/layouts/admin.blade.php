@@ -269,9 +269,9 @@
         <div class="sidebar-wrapper">
             <div>
                 <div class="logo-wrapper logo-wrapper-center">
-                    <a href="index.html" data-bs-original-title="" title="">
+                    <a href="{{route('admin.index')}}" data-bs-original-title="" title="">
                         <img class="img-fluid for-dark"
-                             src="https://storage-asset.msi.com/frontend/imgs/logo.png" alt="">
+                             src="https://us-store.msi.com/image/catalog/msi_logo-156x60-4.png" alt="">
                     </a>
                     <div class="back-btn">
                         <i class="fa fa-angle-left"></i>
@@ -281,7 +281,7 @@
                     </div>
                 </div>
                 <div class="logo-icon-wrapper">
-                    <a href="index.html">
+                    <a href="{{route('admin.index')}}">
                         <img class="img-fluid main-logo" src="{{@asset('/assets/admin/images/logo/logo.png')}}"
                              alt="logo">
                     </a>

@@ -1,0 +1,36 @@
+.cart-content{
+    .table{
+    }
+    .product-name{
+        font-weight: bold;
+    }
+    .button{
+        .btn{
+            font-size: 12px;
+        }
+    }
+   
+    p{
+        margin: 0
+    }
+    .btn {
+        padding: 0;
+    }
+    .total, .total-price{
+        font-weight: bold;
+    }
+    .quantity{
+        input{
+            width: 70px;
+            text-align: center;
+        }
+    }
+    .add{
+        border: 1px solid black;
+        padding: 6px 30px;
+    }
+    .checkout{
+        padding: 15px 12px;
+        width: 100%;
+    }
+}

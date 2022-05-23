@@ -88,6 +88,8 @@
     }
     .description {
       border-bottom: 1px solid #ccc;
+      overflow: hidden;
+      text-overflow: ellipsis;
       li {
         white-space: nowrap;
         overflow: hidden;
