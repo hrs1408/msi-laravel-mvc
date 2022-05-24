@@ -84,7 +84,7 @@
                     <button class="btn add">ADD</button>
                 </div>
                 <div class="container-fluid break-line mt-3 mb-3"></div>
-                <button class="btn btn-dark checkout">PROCEED TO CHECKOUT</button>
+                <a href="{{route('home.checkout')}}" class="btn btn-dark checkout">PROCEED TO CHECKOUT</a>
                 <div class="info p-3">
                     <div class="info-item">
                         <i class="fas fa-lock"></i>

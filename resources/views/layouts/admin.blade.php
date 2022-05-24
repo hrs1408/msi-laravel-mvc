@@ -337,13 +337,7 @@
                                 </a>
                                 <ul class="sidebar-submenu">
                                     <li>
-                                        <a href="order-list.html">Order List</a>
-                                    </li>
-                                    <li>
-                                        <a href="order-detail.html">Order Detail</a>
-                                    </li>
-                                    <li>
-                                        <a href="order-tracking.html">Order Tracking</a>
+                                        <a href="{{route('admin.orders.index')}}">Order List</a>
                                     </li>
                                 </ul>
                             </li>

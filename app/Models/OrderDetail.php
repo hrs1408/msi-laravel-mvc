@@ -15,4 +15,9 @@ class OrderDetail extends Model
         'quantity',
         'into_money',
     ];
+
+    public function order()
+    {
+        return $this->belongsTo(Order::class);
+    }
 }

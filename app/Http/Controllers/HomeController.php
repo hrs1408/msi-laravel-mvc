@@ -26,7 +26,11 @@ class HomeController extends Controller
         return view('home.product-details', compact('product'));
     }
 
-    public function checkout(){
-        return view('home.checkout-page');
+    public function checkout()
+    {
+        $user = auth()->user();
+        $cart = $user->cart;
+        $cartDetails = $cart->cartDetail;
+        return view('home.checkout-page', compact('cart', 'cartDetails', 'user'));
     }
 }

@@ -16,8 +16,12 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(\App\Models\User::class)->constrained()->cascadeOnDelete();
-            $table->foreignIdFor(\App\Models\Product::class)->constrained()->cascadeOnDelete();
-            $table->float('total_price');
+            $table->string('name');
+            $table->string('phone');
+            $table->string('address');
+            $table->integer('quantity');
+            $table->float('total_money');
+            $table->string('status')->default('pending');
             $table->timestamps();
         });
     }

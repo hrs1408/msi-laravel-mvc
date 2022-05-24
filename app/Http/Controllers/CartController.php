@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Cart;
 use App\Models\CartDetail;
+use App\Models\Order;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -17,9 +18,32 @@ class CartController extends Controller
         return view('home.cart-page', compact('cart', 'cartDetails'));
     }
 
-    public function checkout()
+    public function checkout(Request $request)
     {
-        //
+        $cart = auth()->user()->cart;
+        $order =  Order::create([
+            'user_id' => auth()->user()->id,
+            'name' => $request->name,
+            'phone' => $request->phone,
+            'address' => $request->address,
+            'quantity' => $cart->quantity,
+            'total_money' => $cart->total_money,
+            'status' => 'pending'
+        ]);
+        $cartDetails = $cart->cartDetail;
+        foreach ($cartDetails as $cartDetail) {
+            $order->orderDetails()->create([
+                'order_id' => $order->id,
+                'product_id' => $cartDetail->product_id,
+                'quantity' => $cartDetail->quantity,
+                'into_money' => $cartDetail->into_money
+            ]);
+        }
+        $cart->cartDetail()->delete();
+        $cart->quantity = 0;
+        $cart->total_money = 0;
+        $cart->save();
+        return redirect()->route('home.index');
     }
 
 

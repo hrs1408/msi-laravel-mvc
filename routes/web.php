@@ -7,6 +7,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Admin\CategoryController as AdminCategoryController;
 use App\Http\Controllers\Admin\ProductController as AdminProductController;
 use App\Http\Controllers\Admin\UserController as AdminUserController;
+use App\Http\Controllers\Admin\OrderController as AdminOrderController;
 
 
 /*
@@ -33,6 +34,7 @@ Route::group([], static function () {
         Route::post('/cart/update', [CartController::class, 'update'])->name('update');
         Route::delete('/cart/remove', [CartController::class, 'remove'])->name('remove');
         Route::post('/cart/destroy', [CartController::class, 'destroy'])->name('destroy');
+        Route::post('/checkout', [CartController::class, 'checkout'])->name('checkout');
     });
     Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'admin.only'], static function () {
         Route::get('/', [AdminController::class, 'index'])->name('index');
@@ -59,6 +61,14 @@ Route::group([], static function () {
             'edit' => 'users.edit',
             'update' => 'users.update',
             'destroy' => 'users.destroy',
+        ]);
+        Route::resource('/orders', AdminOrderController::class)->names([
+            'index' => 'orders.index',
+            'create' => 'orders.create',
+            'store' => 'orders.store',
+            'edit' => 'orders.edit',
+            'update' => 'orders.update',
+            'destroy' => 'orders.destroy',
         ]);
     });
 });
