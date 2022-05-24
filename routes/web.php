@@ -65,7 +65,7 @@ Route::group([], static function () {
         Route::resource('/orders', AdminOrderController::class)->names([
             'index' => 'orders.index',
             'create' => 'orders.create',
-            'store' => 'orders.store',
+            'show' => 'orders.show',
             'edit' => 'orders.edit',
             'update' => 'orders.update',
             'destroy' => 'orders.destroy',
