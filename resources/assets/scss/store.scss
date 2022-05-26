@@ -18,6 +18,10 @@
   ul {
     color: var(--white-color);
     li {
+      a{
+        color: white;
+        text-decoration: none;
+      }
       &::before {
         content: "";
         width: 0;
@@ -31,8 +35,10 @@
       font-weight: bold;
     }
   }
+
   .cart {
     padding-right: 8%;
+
     a {
       box-shadow: none;
       color: var(--white-color);
@@ -44,13 +50,25 @@
   h5 {
     text-align-last: center;
   }
+
   .product-text {
     color: var(--gray-color);
   }
+
   .exp-product-item {
     .exp-product-img {
       width: 50%;
     }
+
+    .exp-product-text {
+      font-weight: bold;
+    }
+  }
+  .exp-product-item-repo {
+    .exp-product-img {
+      width: 25%;
+    }
+
     .exp-product-text {
       font-weight: bold;
     }
@@ -65,56 +83,61 @@
 
 .product-list {
   .product-thumb {
-    font-family: "Open Sans", sans-serif;
-    font-family: "Oswald", sans-serif;
-    a {
-      text-decoration: none;
-      color: var(--black-color);
-    }
+    font-family: "DIN-Pro";
+    a{
+text-decoration: none;
 
+    }
     .image {
       text-align-last: center;
       border-bottom: 1px solid #ccc;
     }
+
     .title {
       font-weight: bold;
-      a {
-        color: var(--black-color);
-      }
+      color: var(--black-color);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
       border-bottom: 1px solid #ccc;
     }
+
     .description {
       border-bottom: 1px solid #ccc;
       overflow: hidden;
       text-overflow: ellipsis;
+      color: var(--black-color);
       li {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
       }
     }
+
     .price {
       text-align: right;
+
       .price-new {
         color: var(--red-color);
         font-weight: bold;
         font-size: 24px;
       }
+
       .price-old {
         text-decoration: line-through;
         color: rgb(41, 41, 41);
         font-size: 11px;
       }
+
       border-bottom: 1px solid #ccc;
     }
+
     .button {
       .btn {
         font-size: 10px;
         border-radius: 20px;
       }
+
       text-align: right;
     }
   }
@@ -124,6 +147,7 @@
   place-content: center;
   a {
     color: var(--black-color);
+
     &:hover {
       color: var(--red-color);
       text-decoration: none;

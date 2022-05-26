@@ -55,8 +55,8 @@
 .header-repository .bar1,
 .header-repository .bar2,
 .header-repository .bar3 {
-  width: 35px;
-  height: 4px;
+  width: 30px;
+  height: 3px;
   background-color: #333;
   margin: 6px 0;
   -webkit-transition: 0.4s;
@@ -94,5 +94,27 @@
 
 .header-repository .menuFunction .menuFunction-item a:hover {
   color: var(--dark-gray-color);
+}
+
+.offcanvas-content li {
+  padding: 9px;
+  width: 100%;
+  height: 40px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.offcanvas-content li a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.offcanvas-content li:hover {
+  background-color: #f5f5f5;
+}
+
+.offcanvas-content li:hover a {
+  color: var(--red-color);
 }
 /*# sourceMappingURL=header.css.map */

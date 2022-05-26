@@ -81,8 +81,94 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid break-line"></div>
+    <div class="text-center">
+        <div class="d-flex">
+            <div class="line"></div>
+            <div class="text"><h4>DETAIL SPECIFI</h4></div>
+            <div class="line"></div>
+        </div>
+    </div>
     <div class="container product-body">
         {!! $product->body !!}
+    </div>
+    <div class="service-support text-center mt-4">
+        <div class="d-flex">
+            <div class="line"></div>
+            <div class="text"><h4>SERVICE & SUPPORT</h4></div>
+            <div class="line"></div>
+        </div>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-2 text-center">
+                    <div class="img">
+                        <img
+                            src="https://us-store.msi.com/image/phone.png"
+                            alt=""
+                            class="img-fluid w-25"
+                        />
+                    </div>
+                    <div class="title fw-bold">Telephone</div>
+                    <div class="sub">
+                        Call our support representative 888-796-2664 Mon-Fri 9:00AM-5:00PM
+                        PST
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="img">
+                        <img
+                            src="https://us-store.msi.com/image/Email.png"
+                            alt=""
+                            class="img-fluid w-25"
+                        />
+                    </div>
+                    <div class="title fw-bold">Email US</div>
+                    <div class="sub">Send us your inquire</div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="img">
+                        <img
+                            src="https://us-store.msi.com/image/Warranty-icon.png"
+                            alt=""
+                            class="img-fluid w-25"
+                        />
+                    </div>
+                    <div class="title fw-bold">Warranty Information</div>
+                    <div class="sub">View Manufacturer warranty information</div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="img">
+                        <img
+                            src="https://us-store.msi.com/image/Barcode.png"
+                            alt=""
+                            class="img-fluid w-25"
+                        />
+                    </div>
+                    <div class="title fw-bold">Register Your Product</div>
+                    <div class="sub">Get the most out of your ownership</div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="img">
+                        <img
+                            src="https://us-store.msi.com/image/Download.png"
+                            alt=""
+                            class="img-fluid w-25"
+                        />
+                    </div>
+                    <div class="title fw-bold">Manuals and Downloads</div>
+                    <div class="sub">Latest software, drivers, manuals, utilities</div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="img">
+                        <img
+                            src="https://us-store.msi.com/image/Search-Articles.png"
+                            alt=""
+                            class="img-fluid w-25"
+                        />
+                    </div>
+                    <div class="title fw-bold">Support Articles</div>
+                    <div class="sub">Search a solution, troubleshooting guide</div>
+                </div>
+            </div>
+        </div>
     </div>
 </x-app-layout>

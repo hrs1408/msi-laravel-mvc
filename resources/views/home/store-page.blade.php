@@ -1,15 +1,15 @@
 <x-app-layout>
-    <div class="side-bar d-flex justify-content-between">
+    <div class="side-bar d-none d-xl-flex justify-content-between">
         <ul class="ms-5 pt-2 d-flex list-unstyled gap-3">
-            <li>LAPTOPS</li>
-            <li>DESKTOPS</li>
-            <li>MONITORS</li>
-            <li>GRAPHIC CARDS</li>
-            <li>MOTHERBOARDS</li>
-            <li>GAMING GEARS</li>
-            <li>PC COMPONENT</li>
-            <li>SALE</li>
-            <li>WINDOWS 11</li>
+            @forelse ($categories as $category)
+                <li class="d-flex align-items-center">
+                    <a href="" class="text-gray-600">{{$category->name}}</a>
+                </li>
+            @empty
+                <li class="d-flex align-items-center">
+                    <a href="#" class="text-gray-600">No categories</a>
+                </li>
+            @endforelse
         </ul>
         <div class="cart">
             <ul class="ms-5 pt-2 d-flex list-unstyled gap-3">
@@ -27,7 +27,7 @@
     </x-carousel>
     <div class="explorer-product mt-4">
         <h5>EXPLORER <span class="product-text">PRODUCTS</span></h5>
-        <div class="container">
+        <div class="container d-none d-md-block">
             <div class="row m-auto mt-4 p-1">
                 <div class="col-md-2 exp-product-item text-center">
                     <img
@@ -77,6 +77,94 @@
                     />
                     <p class="exp-product-text">Gaming Gears</p>
                 </div>
+            </div>
+        </div>
+        <div class="exp-product-responsive mt-3 d-md-none d-block">
+            <div
+                id="carouselExampleControls"
+                class="carousel slide"
+                data-bs-ride="carousel"
+            >
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="exp-product-item-repo text-center">
+                            <img
+                                src="https://us-store.msi.com/image/catalog/hpc/NB.png"
+                                alt=""
+                                class="img-fluid exp-product-img"
+                            />
+                            <p class="exp-product-text">Laptops</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="exp-product-item-repo text-center">
+                            <img
+                                src="https://us-store.msi.com/image/catalog/hpc/desktop.png"
+                                alt=""
+                                class="img-fluid exp-product-img"
+                            />
+                            <p class="exp-product-text">Desktops</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="exp-product-item-repo text-center">
+                            <img
+                                src="https://us-store.msi.com/image/catalog/hpc/Monitor.png"
+                                alt=""
+                                class="img-fluid exp-product-img"
+                            />
+                            <p class="exp-product-text">Monitors</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="exp-product-item-repo text-center">
+                            <img
+                                src="https://us-store.msi.com/image/catalog/hpc/VGA2.png"
+                                alt=""
+                                class="img-fluid exp-product-img"
+                            />
+                            <p class="exp-product-text">Graphic Cards</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="exp-product-item-repo text-center">
+                            <img
+                                src="https://us-store.msi.com/image/catalog/hpc/MB.png"
+                                alt=""
+                                class="img-fluid exp-product-img"
+                            />
+                            <p class="exp-product-text">Motherboards</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="exp-product-item-repo text-center">
+                            <img
+                                src="https://us-store.msi.com/image/catalog/hpc/Game-Gear.png"
+                                alt=""
+                                class="img-fluid exp-product-img"
+                            />
+                            <p class="exp-product-text">Gaming Gears</p>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev"
+                >
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next"
+                >
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </div>

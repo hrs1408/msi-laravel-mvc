@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Models\Product;
 
@@ -15,8 +16,9 @@ class HomeController extends Controller
 
     public function store()
     {
+        $categories = Category::all();
         $products = Product::with('category')->paginate(12);
-        return view('home.store-page', compact('products'));
+        return view('home.store-page', compact('products', 'categories'));
 
     }
 
@@ -32,5 +34,11 @@ class HomeController extends Controller
         $cart = $user->cart;
         $cartDetails = $cart->cartDetail;
         return view('home.checkout-page', compact('cart', 'cartDetails', 'user'));
+    }
+
+    public function profile()
+    {
+        $user = auth()->user();
+        return view('home.profile', compact('user'));
     }
 }

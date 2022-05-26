@@ -108,105 +108,11 @@
                                 <span class="lnr lnr-magnifier"></span>
                             </span>
                     </li>
-                    <li class="onhover-dropdown">
-                        <div class="notification-box">
-                            <span class="lnr lnr-alarm"></span>
-                            <span class="badge rounded-pill badge-theme">4</span>
-                        </div>
-                        <ul class="notification-dropdown onhover-show-div">
-                            <li>
-                                <span class="lnr lnr-alarm"></span>
-                                <h6 class="f-18 mb-0">Notitications</h6>
-                            </li>
-                            <li>
-                                <p>
-                                    <i class="fa fa-circle-o me-3 font-primary"></i>Delivery processing <span
-                                        class="pull-right">10
-                                            min.</span>
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    <i class="fa fa-circle-o me-3 font-success"></i>Order Complete<span
-                                        class="pull-right">1 hr</span>
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    <i class="fa fa-circle-o me-3 font-info"></i>Tickets Generated<span
-                                        class="pull-right">3 hr</span>
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    <i class="fa fa-circle-o me-3 font-danger"></i>Delivery Complete<span
-                                        class="pull-right">6 hr</span>
-                                </p>
-                            </li>
-                            <li>
-                                <a class="btn btn-primary" href="javascript:void(0)">Check all notification</a>
-                            </li>
-                        </ul>
-                    </li>
-
                     <li>
                         <div class="mode">
                             <span class="lnr lnr-moon"></span>
                         </div>
                     </li>
-
-                    <li class="onhover-dropdown">
-                        <span class="lnr lnr-bubble"></span>
-                        <ul class="chat-dropdown onhover-show-div">
-                            <li>
-                                <span class="lnr lnr-bubble"></span>
-                                <h6 class="f-18 mb-0">Message Box</h6>
-                            </li>
-                            <li>
-                                <div class="media">
-                                    <img class="img-fluid rounded-circle me-3"
-                                         src="{{@asset('/assets/admin/images/user/1.jpg')}}"
-                                         alt="user1">
-                                    <div class="status-circle online"></div>
-                                    <div class="media-body">
-                                        <span>Erica Hughes</span>
-                                        <p>Lorem Ipsum is simply dummy...</p>
-                                    </div>
-                                    <p class="f-12 font-success">58 mins ago</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="media">
-                                    <img class="img-fluid rounded-circle me-3"
-                                         src="{{@asset('/assets/admin/images/user/2.png')}}"
-                                         alt="user2">
-                                    <div class="status-circle online"></div>
-                                    <div class="media-body">
-                                        <span>Kori Thomas</span>
-                                        <p>Lorem Ipsum is simply dummy...</p>
-                                    </div>
-                                    <p class="f-12 font-success">1 hr ago</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="media">
-                                    <img class="img-fluid rounded-circle me-3"
-                                         src="{{@asset('/assets/admin/images/user/3.png')}}"
-                                         alt="user3">
-                                    <div class="status-circle offline"></div>
-                                    <div class="media-body">
-                                        <span>Ain Chavez</span>
-                                        <p>Lorem Ipsum is simply dummy...</p>
-                                    </div>
-                                    <p class="f-12 font-danger">32 mins ago</p>
-                                </div>
-                            </li>
-                            <li class="text-center">
-                                <a class="btn btn-primary" href="javascript:void(0)">View All</a>
-                            </li>
-                        </ul>
-                    </li>
-
                     <li class="maximize">
                         <a class="text-dark" href="javascript:void(0)" onclick="javascript:toggleFullScreen()">
                             <span class="lnr lnr-frame-expand"></span>

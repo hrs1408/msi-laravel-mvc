@@ -287,7 +287,8 @@
 }
 
 .service .service-link .service-head .service-icon {
-  width: 20%;
+  margin-top: 10px;
+  width: 10%;
 }
 
 .service .service-link .service-head h3,
