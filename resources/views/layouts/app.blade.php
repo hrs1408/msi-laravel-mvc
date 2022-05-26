@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="{{@asset('/assets/scss/store.css')}}"/>
     <link rel="stylesheet" href="{{@asset('/assets/scss/product-detail.css')}}">
     <link rel="stylesheet" href="{{@asset('/assets/scss/style-cart.css')}}">
+    <link rel="stylesheet" href="{{@asset('/assets/scss/footer.css')}}">
 
     <link
         rel="shortcut icon"
@@ -92,7 +93,7 @@
                             @endif
                         </div>
                         <div class="menuFunction-item">
-                            <a href="">
+                            <a href="https://goo.gl/maps/rnKWXQyAufWMd6ne9">
                                 <i class="fa-solid fa-location-dot"></i>
                             </a>
                         </div>
@@ -149,7 +150,7 @@
         aria-labelledby="offcanvasExampleLabel"
     >
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">MSI Viet Nam</h5>
             <button
                 type="button"
                 class="btn-close text-reset"
@@ -159,8 +160,20 @@
         </div>
         <div class="offcanvas-body">
             <div>
-                Some text as placeholder. In real life you can have the elements you
-                have chosen. Like, text, images, lists, etc.
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="">SẢN PHẨM</a>
+                    </li>
+                    <li>
+                        <a href="">GIẢI PHÁP ODM</a>
+                    </li>
+                    <li>
+                        <a href="">CÓ GÌ MỚI</a>
+                    </li>
+                    <li>
+                        <a href="">HỖ TRỢ</a>
+                    </li>
+                </ul>
             </div>
             <div class="dropdown mt-3"></div>
         </div>
