@@ -1,0 +1,20 @@
+[
+    {
+        "level": "WARNING",
+        "message": "http:\/\/localhost:8000\/assets\/admin\/js\/chart\/apex-chart\/apex-chart.js 9091:60 \"Possible Unhandled Promise Rejection:\" Error: Element not found\n    at http:\/\/localhost:8000\/assets\/admin\/js\/chart\/apex-chart\/apex-chart.js:14681:34\n    at st (http:\/\/localhost:8000\/assets\/admin\/js\/chart\/apex-chart\/apex-chart.js:9027:13)\n    at new Q (http:\/\/localhost:8000\/assets\/admin\/js\/chart\/apex-chart\/apex-chart.js:8972:90)\n    at i.value (http:\/\/localhost:8000\/assets\/admin\/js\/chart\/apex-chart\/apex-chart.js:14665:28)\n    at http:\/\/localhost:8000\/assets\/admin\/js\/chart\/apex-chart\/chart-custom1.js:103:7",
+        "source": "console-api",
+        "timestamp": 1653530640137
+    },
+    {
+        "level": "WARNING",
+        "message": "http:\/\/localhost:8000\/assets\/admin\/js\/chart\/apex-chart\/apex-chart.js 9091:60 \"Possible Unhandled Promise Rejection:\" Error: Element not found\n    at http:\/\/localhost:8000\/assets\/admin\/js\/chart\/apex-chart\/apex-chart.js:14681:34\n    at st (http:\/\/localhost:8000\/assets\/admin\/js\/chart\/apex-chart\/apex-chart.js:9027:13)\n    at new Q (http:\/\/localhost:8000\/assets\/admin\/js\/chart\/apex-chart\/apex-chart.js:8972:90)\n    at i.value (http:\/\/localhost:8000\/assets\/admin\/js\/chart\/apex-chart\/apex-chart.js:14665:28)\n    at http:\/\/localhost:8000\/assets\/admin\/js\/chart\/apex-chart\/chart-custom1.js:222:7",
+        "source": "console-api",
+        "timestamp": 1653530640137
+    },
+    {
+        "level": "WARNING",
+        "message": "http:\/\/localhost:8000\/assets\/admin\/js\/chart\/apex-chart\/apex-chart.js 9091:60 \"Possible Unhandled Promise Rejection:\" Error: Element not found\n    at http:\/\/localhost:8000\/assets\/admin\/js\/chart\/apex-chart\/apex-chart.js:14681:34\n    at st (http:\/\/localhost:8000\/assets\/admin\/js\/chart\/apex-chart\/apex-chart.js:9027:13)\n    at new Q (http:\/\/localhost:8000\/assets\/admin\/js\/chart\/apex-chart\/apex-chart.js:8972:90)\n    at i.value (http:\/\/localhost:8000\/assets\/admin\/js\/chart\/apex-chart\/apex-chart.js:14665:28)\n    at http:\/\/localhost:8000\/assets\/admin\/js\/chart\/apex-chart\/chart-custom1.js:363:7",
+        "source": "console-api",
+        "timestamp": 1653530640138
+    }
+]
