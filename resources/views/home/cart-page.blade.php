@@ -66,16 +66,16 @@
             <div class="col-xl-4 bg-light p-3">
                 <h3 class="pt-2">CART SUMMARY</h3>
                 <hr>
-                <span>{{$cart->quantity}} Product</span>
+                <span>{{isset($cart->quantity) ? ($cart->quantity) : '0'}} Product</span>
                 <div class="container-fluid break-line"></div>
                 <div class="d-flex justify-content-between">
                     <div class="sub-total">Sub-Total</div>
-                    <div class="sub-total-price">${{$cart->total_money}}</div>
+                    <div class="sub-total-price">${{isset($cart->total_money) ? ($cart->total_money) : "0"}}</div>
                 </div>
                 <hr>
                 <div class="d-flex justify-content-between">
                     <div class="total">Total</div>
-                    <div class="total-price">${{$cart->total_money}}</div>
+                    <div class="total-price">${{isset($cart->total_money) ? ($cart->total_money) : "0"}}</div>
                 </div>
                 <div class="container-fluid break-line mt-3"></div>
                 <span>Do you have a promotion code?</span>

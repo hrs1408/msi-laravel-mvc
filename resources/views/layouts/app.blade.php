@@ -126,14 +126,16 @@
             </div>
         </div>
         <div class="logo-repository">
-            <img
-                src="https://storage-asset.msi.com/frontend/imgs/logo.png"
-                alt=""
-            />
+            <a href="{{route('home.index')}}">
+                <img
+                    src="https://storage-asset.msi.com/frontend/imgs/logo.png"
+                    alt=""
+                />
+            </a>
         </div>
         <div class="menuFunction h-100 d-flex justify-content-between">
             <div class="menuFunction-item">
-                <a href="">
+                <a href="{{route('login')}}">
                     <i class="fa-solid fa-user"></i>
                 </a>
             </div>
