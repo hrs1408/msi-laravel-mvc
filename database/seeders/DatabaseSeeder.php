@@ -25,9 +25,5 @@ class DatabaseSeeder extends Seeder
             'role' => 'admin',
         ]);
         \App\Models\User::factory(10)->create();
-        \App\Models\Category::factory(20)->create();
-        \App\Models\Product::factory(100)->create();
-        \App\Models\Image::factory(100)->create();
-
     }
 }
